@@ -11,6 +11,8 @@ directory = '.\\'
 
 # Define the content to check
 word = ''
+with open('content_to_check.txt', 'r') as file:
+    word = file.read()
 
 # Get all files in the directory
 files = os.listdir(directory)

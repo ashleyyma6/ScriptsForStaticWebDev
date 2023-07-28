@@ -14,6 +14,13 @@ directory = '.\\'
 old_content1 = ''
 new_content1 = ''
 
+with open('old.txt', 'r') as file:
+    old_content1 = file.read()
+
+with open('new.txt', 'r') as file:
+    new_content1 = file.read()
+
+
 # Get all files in the directory
 files = os.listdir(directory)
 
